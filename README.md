@@ -2,6 +2,8 @@
 
 runs clang-format on the diff of the most recent commit
 
+Fixed version of purduesigbots/clang-format-action
+
 # usage
 
 ```yml
@@ -47,4 +49,3 @@ there are already a couple versions of this action floating around ([cvra/clang-
 - or have some sketchy docker files
 
 so for maximum ease of use we are providing a more robust action here
-

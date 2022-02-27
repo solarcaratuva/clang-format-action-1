@@ -8,8 +8,12 @@ inputs:
   style:
     description: "style passed to clang-format. reads .clang-format file in the repo by default. see clang-format docs for more."
     default: "file"
+  commit:
+    description: "commit passed to clang-format. From clang-format documentation: Revision from which to compute the diff."
+    default: "HEAD^"
 runs:
   using: "docker"
   image: "Dockerfile"
   args:
     - ${{ inputs.style }}
+    - ${{ inputs.commit }}

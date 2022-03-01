@@ -1,3 +1,3 @@
 #!/bin/sh -l
 
-git-clang-format --style="$1" $2
+git clang-format --style="$1" $2
